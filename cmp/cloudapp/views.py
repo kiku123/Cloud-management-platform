@@ -3,7 +3,8 @@ from django.shortcuts import render, HttpResponse
 # Create your views here.
 
 def index(request):
-    return HttpResponse("This will be the homepage where goes the Dashboard")
+    return render(request, 'index.html')
+    #return HttpResponse("This will be the homepage where goes the Dashboard")
 
 def resource(request):
     return HttpResponse("This will be the Resource Management page")
@@ -20,3 +21,6 @@ def about(request):
 
 def contact(request):
     return HttpResponse("This will be the contact us page")
+
+def logout(request):
+    return HttpResponse("This will be the logout page")
