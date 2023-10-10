@@ -7,20 +7,26 @@ def index(request):
     #return HttpResponse("This will be the homepage where goes the Dashboard")
 
 def resource(request):
-    return HttpResponse("This will be the Resource Management page")
+    return render(request, 'resource.html')
+    #return HttpResponse("This will be the Resource Management page")
 
 
 def alert(request):
-    return HttpResponse("This will be the Monitoring & alerts page")
+    return render(request, 'alert.html')
+    #return HttpResponse("This will be the Monitoring & alerts page")
 
 def management(request):
-    return HttpResponse("This will be the Cost management page")
+    return render(request, 'management.html')
+    #return HttpResponse("This will be the Cost management page")
 
 def about(request):
-    return HttpResponse("This will be the About Us")
+    return render(request, 'about.html')
+    #return HttpResponse("This will be the About Us")
 
 def contact(request):
-    return HttpResponse("This will be the contact us page")
+    return render(request, 'contact.html')
+    #return HttpResponse("This will be the contact us page")
 
 def logout(request):
-    return HttpResponse("This will be the logout page")
+    return render(request, 'logout.html')
+    #return HttpResponse("This will be the logout page")
